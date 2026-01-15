@@ -1,0 +1,38 @@
+name: atlas_prime
+display_name: "AtLas-Prime"
+description: A Flutter app for interactive NFT-based property tours and marketplace (AtLas-Prime / Meta Estate Vault).
+publish_to: 'none'
+version: 0.1.0+1
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  provider: ^6.0.5
+  http: ^0.13.6
+  dio: ^5.0.0
+  cached_network_image: ^3.2.3
+  flutter_svg: ^1.1.6
+  web3dart: ^2.7.0
+  firebase_core: ^2.8.0
+  cloud_firestore: ^4.5.0
+  firebase_storage: ^11.0.0
+  firebase_auth: ^4.4.0
+  intl: ^0.18.0
+  photo_view: ^0.14.0
+  image_picker: ^0.8.7+4
+  flutter_inappwebview: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts: []
