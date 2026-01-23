@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class MetaverseSpawner : MonoBehaviour
+{
+    public GameObject housePrefab; // Assign in Inspector
+    public GameObject carPrefab;
+    void Start()
+    {
+        // Example: Spawn a house at position
+        Instantiate(housePrefab, new Vector3(0, 0, 10), Quaternion.identity);
+        // Later: Load dynamically from Flutter-passed data (e.g., NFT metadata)
+    }
+    // Public method callable from Flutter
+    public void LoadNFTModel(string url)
+    {
+        // Use UnityWebRequest to load glTF/model from IPFS/URL
+        Debug.Log("Loading NFT from: " + url);
+        // Implement async loading here
+    }
+}
